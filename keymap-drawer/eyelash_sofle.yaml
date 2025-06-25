@@ -39,7 +39,7 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - {t: '''', h: Sft+', s: '"'}
   - Ctl+$$mdi:apple-keyboard-control$$
   - Z
   - X
