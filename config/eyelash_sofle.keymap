@@ -38,6 +38,24 @@
     behaviors {
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        arrow {
+            bindings = <&arrow>;
+            key-positions = <34 35>;
+        };
+    };
+
+    macros {
+        arrow: arrow {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp MINUS &kp GT>;
+            label = "ARROW";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
