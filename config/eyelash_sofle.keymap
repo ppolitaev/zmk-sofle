@@ -46,19 +46,14 @@
             key-positions = <34 35>;
         };
 
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <51 0>;
+        br {
+            bindings = <&br>;
+            key-positions = <21 22 39>;
         };
 
-        plus {
-            bindings = <&kp EQUAL>;
-            key-positions = <39 12>;
-        };
-
-        minus {
-            bindings = <&kp MINUS>;
-            key-positions = <39 11>;
+        br_f {
+            bindings = <&br_f>;
+            key-positions = <39 26 21 22>;
         };
     };
 
@@ -69,6 +64,20 @@
             bindings = <&none &kp MINUS &kp GT>;
             label = "ARROW";
         };
+
+        br: br {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LBKT &kp LBRC>;
+            label = "BR";
+        };
+
+        br_f: br_f {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp RBKT &kp RBRC>;
+            label = "BR_F";
+        };
     };
 
     keymap {
@@ -76,11 +85,11 @@
 
         layer0 {
             bindings = <
-&kp GRAVE       &kp N1  &kp N2        &kp N3        &kp N4                &kp N5       &kp UP_ARROW     &kp N6     &kp N7           &kp N8     &kp N9           &kp N0      &kp BACKSPACE
-&kp TAB         &kp Q   &kp W         &kp E         &kp R                 &kp T        &kp DOWN_ARROW   &kp Y      &kp U            &kp I      &kp O            &kp P       &kp LEFT_BRACKET
-&kp LEFT_SHIFT  &kp A   &kp S         &kp D         &kp F                 &kp G        &kp LEFT_ARROW   &kp H      &kp J            &kp K      &kp L            &kp SEMI    &mt RIGHT_SHIFT APOS
-&kp LC(LCTRL)   &kp Z   &kp X         &kp C         &kp V                 &kp B        &kp RIGHT_ARROW  &kp N      &kp M            &kp COMMA  &kp DOT          &kp FSLH    &kp RIGHT_CONTROL
-&kp C_MUTE      &mo 1   &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_SHIFT SPACE  &kp ENTER    &kp ENTER        &kp ENTER  &mt RSHFT SPACE  &mo 2      &kp RIGHT_SHIFT  &kp DELETE
+&mt ESCAPE GRAVE  &kp N1  &kp N2        &kp N3        &kp N4                &kp N5       &kp UP_ARROW     &kp N6     &kp N7           &kp N8     &kp N9           &kp N0      &kp BACKSPACE
+&kp TAB           &kp Q   &kp W         &kp E         &kp R                 &kp T        &kp DOWN_ARROW   &kp Y      &kp U            &kp I      &kp O            &kp P       &kp LEFT_BRACKET
+&kp LEFT_SHIFT    &kp A   &kp S         &kp D         &kp F                 &kp G        &kp LEFT_ARROW   &kp H      &kp J            &kp K      &kp L            &kp SEMI    &mt RIGHT_SHIFT APOS
+&kp LC(LCTRL)     &kp Z   &kp X         &kp C         &kp V                 &kp B        &kp RIGHT_ARROW  &kp N      &kp M            &kp COMMA  &kp DOT          &kp FSLH    &kp RIGHT_CONTROL
+&kp C_MUTE        &mo 1   &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_SHIFT SPACE  &kp ENTER    &kp ENTER        &kp ENTER  &mt RSHFT SPACE  &mo 2      &kp RIGHT_SHIFT  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
