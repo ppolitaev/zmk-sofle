@@ -45,6 +45,11 @@
             bindings = <&arrow>;
             key-positions = <34 35>;
         };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <51 0>;
+        };
     };
 
     macros {
