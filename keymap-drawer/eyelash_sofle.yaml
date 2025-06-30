@@ -328,3 +328,5 @@ layers:
 combos:
 - p: [34, 35]
   k: '&arrow'
+- p: [51, 0]
+  k: $$mdi:keyboard-esc$$
