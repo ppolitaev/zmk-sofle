@@ -46,14 +46,14 @@
             key-positions = <34 35>;
         };
 
-        br {
-            bindings = <&br>;
-            key-positions = <21 22>;
+        minus {
+            bindings = <&mt KP_MINUS UNDER>;
+            key-positions = <11 39>;
         };
 
-        br_f {
-            bindings = <&br_f>;
-            key-positions = <47 48>;
+        plus {
+            bindings = <&mt KP_PLUS KP_EQUAL>;
+            key-positions = <39 12>;
         };
     };
 
@@ -68,7 +68,7 @@
         br: br {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LBKT &kp LBRC>;
+            bindings = <&none &kp LBKT>;
             label = "BR";
         };
 
