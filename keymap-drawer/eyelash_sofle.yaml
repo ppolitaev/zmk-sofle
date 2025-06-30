@@ -117,7 +117,7 @@ layers:
   - Ins
   - {t: '$$mdi:transfer$$', type: trans}
   - F12
-  - {t: '$$mdi:transfer$$', type: trans}
+  - \
   - $$mdi:volume-off$$
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
