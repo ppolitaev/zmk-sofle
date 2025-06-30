@@ -44,6 +44,7 @@
         arrow {
             bindings = <&arrow>;
             key-positions = <34 35>;
+            layers = <0>;
         };
     };
 
