@@ -328,7 +328,7 @@ layers:
 combos:
 - p: [34, 35]
   k: '&arrow'
-- p: [21, 22]
-  k: '&br'
-- p: [47, 48]
-  k: '&br_f'
+- p: [11, 39]
+  k: {t: _, h: KP MINUS}
+- p: [39, 12]
+  k: {t: KP EQUAL, h: KP PLUS}
