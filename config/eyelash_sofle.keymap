@@ -50,6 +50,16 @@
             bindings = <&kp ESC>;
             key-positions = <51 0>;
         };
+
+        plus {
+            bindings = <&mt PLUS KP_EQUAL>;
+            key-positions = <39 12>;
+        };
+
+        minus {
+            bindings = <&mt KP_MINUS UNDER>;
+            key-positions = <39 11>;
+        };
     };
 
     macros {
