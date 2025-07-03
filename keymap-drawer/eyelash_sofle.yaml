@@ -33,7 +33,7 @@ layers:
   - D
   - F
   - G
-  - $$mdi:arrow-left-bold$$
+  - Ctl+Alt+$$mdi:arrow-left-bold$$
   - H
   - J
   - K
