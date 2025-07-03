@@ -46,7 +46,7 @@ layers:
   - C
   - V
   - B
-  - $$mdi:arrow-right-bold$$
+  - Ctl+Alt+$$mdi:arrow-right-bold$$
   - N
   - M
   - {t: ',', s: <}
