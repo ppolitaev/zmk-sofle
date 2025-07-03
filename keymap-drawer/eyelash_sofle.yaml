@@ -328,4 +328,4 @@ layers:
 combos:
 - p: [34, 35]
   k: '&arrow'
-  l: ['2']
+  l: [layer1]
