@@ -62,11 +62,11 @@
 
         layer0 {
             bindings = <
-&mt ESCAPE GRAVE  &kp N1  &kp N2        &kp N3        &kp N4                &kp N5       &kp UP_ARROW       &kp N6     &kp N7           &kp N8     &kp N9           &kp N0      &kp BACKSPACE
-&kp TAB           &kp Q   &kp W         &kp E         &kp R                 &kp T        &kp DOWN_ARROW     &kp Y      &kp U            &kp I      &kp O            &kp P       &kp LEFT_BRACKET
-&kp LEFT_SHIFT    &kp A   &kp S         &kp D         &kp F                 &kp G        &kp LC(LA(LEFT))   &kp H      &kp J            &kp K      &kp L            &kp SEMI    &mt RIGHT_SHIFT APOS
-&kp LC(LCTRL)     &kp Z   &kp X         &kp C         &kp V                 &kp B        &kp LC(LA(RIGHT))  &kp N      &kp M            &kp COMMA  &kp DOT          &kp FSLH    &kp RIGHT_CONTROL
-&kp C_MUTE        &mo 1   &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_SHIFT SPACE  &kp ENTER    &kp ENTER          &kp ENTER  &mt RSHFT SPACE  &mo 2      &kp RIGHT_SHIFT  &kp DELETE
+&mt ESCAPE GRAVE  &kp N1  &kp N2        &kp N3        &kp N4                &kp N5       &kp UP_ARROW       &kp N6     &kp N7           &kp N8     &kp N9   &kp N0      &kp BACKSPACE
+&kp TAB           &kp Q   &kp W         &kp E         &kp R                 &kp T        &kp DOWN_ARROW     &kp Y      &kp U            &kp I      &kp O    &kp P       &kp LEFT_BRACKET
+&kp LEFT_SHIFT    &kp A   &kp S         &kp D         &kp F                 &kp G        &kp LC(LA(LEFT))   &kp H      &kp J            &kp K      &kp L    &kp SEMI    &mt RIGHT_SHIFT APOS
+&kp LC(LCTRL)     &kp Z   &kp X         &kp C         &kp V                 &kp B        &kp LC(LA(RIGHT))  &kp N      &kp M            &kp COMMA  &kp DOT  &kp FSLH    &kp RIGHT_CONTROL
+&kp C_MUTE        &mo 1   &kp LEFT_GUI  &kp LEFT_ALT  &mt LEFT_SHIFT SPACE  &kp ENTER    &kp ENTER          &kp ENTER  &mt RSHFT SPACE  &mo 2      &trans   &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -75,11 +75,11 @@
 
         layer_1 {
             bindings = <
-&kp ESCAPE      &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F11
-&trans          &trans           &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &trans           &kp HOME         &kp UP      &trans     &kp MINUS         &kp EQUAL
-&kp LEFT_SHIFT  &trans           &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans          &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &trans     &kp F12           &kp BACKSLASH
-&kp C_MUTE      &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &arrow     &trans
+&trans      &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8    &kp F9     &kp F10           &kp F11
+&trans      &trans           &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &trans           &trans           &kp UP    &trans     &kp MINUS         &kp EQUAL
+&trans      &trans           &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &trans           &kp LEFT         &kp DOWN  &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans    &trans     &kp F12           &kp BACKSLASH
+&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans    &arrow     &trans
             >;
 
             display-name = "layer1";
