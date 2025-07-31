@@ -46,12 +46,6 @@
             key-positions = <34 35>;
             layers = <1>;
         };
-
-        shiftlang {
-            bindings = <&kp LC(SPACE)>;
-            key-positions = <56>;
-            layers = <1>;
-        };
     };
 
     macros {
