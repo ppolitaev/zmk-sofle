@@ -69,6 +69,20 @@
             bindings = <&none &kp EQUAL &kp GT>;
             label = "ARROW2";
         };
+
+        email: email {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp P &kp A &kp V &kp E &kp L &kp DOT &kp P &kp O &kp L &kp I &kp T &kp A &kp E &kp F &kp F &kp AT &kp Y &kp A &kp N &kp D &kp E &kp X &kp DOT &kp R &kp U>;
+            label = "EMAIL";
+        };
+
+        email2: email2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp P &kp A &kp V &kp E &kp L &kp DOT &kp P &kp O &kp L &kp I &kp T &kp A &kp E &kp V &kp AT &kp G &kp M &kp A &kp I &kp L &kp DOT &kp C &kp O &kp M>;
+            label = "EMAIL2";
+        };
     };
 
     keymap {
@@ -89,10 +103,10 @@
 
         layer_1 {
             bindings = <
-&trans      &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8    &kp F9     &kp F10           &mt F12 F11
-&trans      &trans           &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &trans           &trans           &kp UP    &kp END    &kp MINUS         &kp EQUAL
-&trans      &trans           &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &trans           &kp LEFT         &kp DOWN  &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans    &trans     &trans            &kp BACKSLASH
+&trans      &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8    &kp F9     &kp F10  &mt F12 F11
+&trans      &trans           &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &trans           &trans           &kp UP    &kp END    &trans   &trans
+&trans      &trans           &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &trans           &kp LEFT         &kp DOWN  &kp RIGHT  &trans   &trans
+&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &trans    &trans     &trans   &kp BACKSLASH
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans    &trans     &trans
             >;
 
@@ -103,8 +117,8 @@
         layer_2 {
             bindings = <
 &kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &trans  &trans     &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &bt BT_SEL 3  &trans  &arrow2    &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans  &arrow     &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
+&trans     &bt BT_CLR    &bt BT_CLR_ALL  &bt BT_SEL 3  &trans  &arrow2    &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &trans       &trans
+&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans  &arrow     &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &trans       &trans
 &trans     &sys_reset    &trans          &bootloader   &trans  &this      &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
 &trans     &trans        &trans          &trans        &trans  &trans     &mkp LCLK        &trans  &trans  &trans      &arrow     &trans
             >;
@@ -115,11 +129,11 @@
 
         layer_3 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans             &trans                &trans                 &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp PLUS          &kp MINUS          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp UNDERSCORE    &kp EQUAL          &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans            &trans             &trans                &trans                 &trans
+&trans  &trans  &trans  &trans   &trans  &trans    &trans  &trans            &trans             &trans                &trans                 &trans         &trans
+&trans  &trans  &trans  &email   &trans  &trans    &trans  &kp PLUS          &kp MINUS          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans
+&trans  &trans  &trans  &email2  &trans  &trans    &trans  &kp UNDERSCORE    &kp EQUAL          &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans         &trans
+&trans  &trans  &trans  &trans   &trans  &trans    &trans  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LESS_THAN         &kp GREATER_THAN       &kp BACKSLASH  &trans
+&trans  &trans  &trans  &trans   &trans  &trans    &trans  &trans            &trans             &trans                &trans                 &trans
             >;
         };
 
