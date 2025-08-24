@@ -116,11 +116,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &trans  &trans     &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &bt BT_SEL 3  &trans  &arrow2    &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &trans       &trans
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans  &arrow     &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &trans       &trans
-&trans     &sys_reset    &trans          &bootloader   &trans  &this      &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans  &trans     &mkp LCLK        &trans  &trans  &trans      &arrow     &trans
+&trans  &kp F1        &kp F2          &kp F3        &kp F4  &kp F5     &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
+&trans  &bt BT_CLR    &bt BT_CLR_ALL  &bt BT_SEL 3  &trans  &arrow2    &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &trans       &trans
+&trans  &out OUT_USB  &out OUT_BLE    &trans        &trans  &arrow     &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &trans       &trans
+&trans  &sys_reset    &trans          &bootloader   &trans  &this      &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
+&trans  &trans        &trans          &trans        &trans  &trans     &mkp LCLK        &trans  &trans  &trans      &arrow     &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
