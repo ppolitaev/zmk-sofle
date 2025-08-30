@@ -41,6 +41,12 @@
             #binding-cells = <0>;
             bindings = <&kp CAPSLOCK>;
         };
+
+        to_layer_3: to_layer_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&switch_layout &to 3>;
+        };
     };
 
     combos {
@@ -134,7 +140,6 @@
 
         layer_3 {
             bindings = <
-&switch_layout
 &trans  &trans  &trans  &trans   &trans  &trans    &trans  &trans            &trans             &trans                &trans                 &trans         &trans
 &trans  &trans  &trans  &email   &trans  &trans    &trans  &kp PLUS          &kp MINUS          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans
 &trans  &trans  &trans  &email2  &trans  &trans    &trans  &kp UNDERSCORE    &kp EQUAL          &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans         &trans
