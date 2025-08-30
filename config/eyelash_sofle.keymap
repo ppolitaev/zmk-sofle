@@ -87,7 +87,7 @@
         l3: l3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &lt 3 ENTER>, <&macro_tap>, <&macro_press>;
+            bindings = <&none &lt 3 ENTER>, <&macro_tap_time 200>;
 
             label = "L3";
         };
