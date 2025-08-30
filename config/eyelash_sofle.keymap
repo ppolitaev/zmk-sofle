@@ -134,7 +134,6 @@
 
         layer_3 {
             bindings = <
-&switch_layout
 &trans  &trans  &trans  &trans   &trans  &trans    &trans  &trans            &trans             &trans                &trans                 &trans         &trans
 &trans  &trans  &trans  &email   &trans  &trans    &trans  &kp PLUS          &kp MINUS          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans         &trans
 &trans  &trans  &trans  &email2  &trans  &trans    &trans  &kp UNDERSCORE    &kp EQUAL          &kp LEFT_BRACE        &kp RIGHT_BRACE        &trans         &trans
